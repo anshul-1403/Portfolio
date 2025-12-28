@@ -3,94 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anshul | Contact</title>
+    <title>Anshul | Projects</title>
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="./css/navbar.css"/>
     <link rel="stylesheet" href="./css/project.css"/>
     <link rel="stylesheet" href="./css/footer.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <nav class="header">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <img src="./img/logo.png" class="logo"/>
-                <button class="nav-toggler">
-                    <span></span>
-                </button>
-                <div class="nav">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./project.html" class="active">Project</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <div class="projects">
-        <div class="pg"><h1>My Projects</h1></div>
-        <div class="myprojects">
-            <div class="projectcard">
-                <img src="./img/guesser.png" class="project-image"/>
-                <p>My First Project Using Javascript in which one need to guess the number picked by the computer.</p>
-                <div class="skills">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3"></i>
-                    <i class="fa-brands fa-js"></i>
-                </div>
-                <a href="https://github.com/anshul-1403/Guessing-Number" class="btn">View On GitHub</a>
-            </div>
-            <div class="projectcard">
-                <img src="./img/parallax.png" class="project-image"/>
-                <p>A Parallax Blog Webpage using HTML and CSS</p>
-                <div class="skills">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3"></i>
-                </div>
-                <a href="https://github.com/anshul-1403/Parallax" class="btn">View On GitHub</a>
-            </div>
-            <div class="projectcard">
-                <img src="./img/bootstrap.png" class="project-image"/>
-                <p>A Responsive Demo Portfolio Webpage Using Bootstrap and its features,AOS.</p>
-                <div class="skills">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3"></i>
-                    <i class="fa-brands fa-js"></i>
-                    <i class="bi bi-bootstrap"></i>
-                </div>
-                <a href="https://github.com/anshul-1403/Bootstrap-AOS" class="btn">View On GitHub</a>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="header">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <img src="./img/logo.png" class="logo"/>
+            <button class="nav-toggler">
+                <span></span>
+            </button>
+            <div class="nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./project.html" class="active">Projects</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="footer1">
+</nav>
+
+<!-- ================= PROJECTS ================= -->
+<div class="projects">
+    <div class="pg">
+        <h1>My Projects</h1>
+    </div>
+
+    <div class="myprojects">
+
+        <!-- Food Delivery -->
+        <div class="projectcard">
+            <img src="./img/food-delivery.png" class="project-image"/>
             <p>
-                If you are Looking for a web/app developer or need help with your project then feel free to contact me at
-                <span>darkblaster175@gmail.com</span>
+                Full-stack food ordering platform with authentication, cart, and order management.
+                Built using React, Node.js, Express, and MongoDB.
             </p>
-            <h1>Let's<br>work<br>together</h1>
-        </div>
-        <div class="footer2">
-            <div class="socialItem">
-                <a href="https://www.instagram.com/anshul_14_05/profilecard/?igsh=MWdyd290bzdtYnp6aA==" class="fa fa-instagram"></a>
-                <a href="https://www.instagram.com/anshul_14_05/profilecard/?igsh=MWdyd290bzdtYnp6aA==" class="footerlink">@anshul_14_05</a>
+            <div class="skills">
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-node-js"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="bi bi-bootstrap"></i>
             </div>
-
-            <div class="socialItem">
-                <a href="mailto:darkblaster175@gmail.com" class="fa fa-google"></a>
-                <a href="mailto:darkblaster175@gmail.com" class="footerlink">darkblaster175@gmail.com</a>
-            </div>
-            <div class="socialItem">
-                <a href="https://www.linkedin.com/in/anshul-059076290" class="fa fa-linkedin"></a>
-                <a href="https://www.linkedin.com/in/anshul-059076290" class="footerlink">Anshul</a>
-            </div>
+            <a href="https://github.com/anshul-1403/food-delivery" class="btn">GitHub</a>
+            <a href="https://food-delivery-1wb786q99-anshul-1403s-projects.vercel.app/" class="btn">Live</a>
         </div>
 
-    </footer>
-</body>
+        <!-- Travel Booking -->
+        <div class="projectcard">
+            <img src="./img/travel.png" class="project-image"/>
+            <p>
+                Hotel and travel booking system with search, listings, and secure API integration.
+                Backend built using Express.js and MongoDB.
+            </p>
+            <div class="skills">
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-node-js"></i>
+                <i class="fa-brands fa-js"></i>
+            </div>
+            <a href="https://github.com/anshul-1403/Travel-App-Frontend" class="btn">GitHub</a>
+            <a href="https://travel-app-frontend-bc3k-3gvy289ma-anshul-1403s-projects.vercel.app/" class="btn">Live</a>
+        </div>
+
+        <!-- Backend / Supabase -->
+        <div class="projectcard">
+            <img src="./img/backend.png" class="project-image"/>
+            <p>
+                Backend-focused CRM case study using Supabase, PostgreSQL, Row Level Security (RLS),
+                and Edge Functions written in TypeScript.
+            </p>
+            <div class="skills">
+                <i class="fa-solid fa-database"></i>
+                <i class="fa-brands fa-node-js"></i>
+                <i class="fa-brands fa-js"></i>
+            </div>
+            <a href="https://github.com/anshul-1403/learnlynk-assignment" class="btn">GitHub</a>
+        </div>
+
+        <!-- Public API CLI -->
+        <div class="projectcard">
+            <img src="./img/cli.png" class="project-image"/>
+            <p>
+                Node.js CLI tool that consumes public REST APIs with filtering, caching,
+                and robust error handling.
+            </p>
+            <div class="skills">
+                <i class="fa-brands fa-node-js"></i>
+                <i class="fa-brands fa-js"></i>
+            </div>
+            <a href="https://github.com/anshul-1403/public-api-assignment" class="btn">GitHub</a>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="projectcard">
+            <img src="./img/portfolio.png" class="project-image"/>
+            <p>
+                Personal portfolio website showcasing projects, skills, and contact details.
+                Built using HTML, CSS, and JavaScript.
+            </p>
+            <div class="skills">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3"></i>
+                <i class="fa-brands fa-js"></i>
+            </div>
+            <a href="https://github.com/anshul-1403/Portfolio" class="btn">GitHub</a>
+            <a href="https://anshul-1403.github.io/Portfolio/" class="btn">Live</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="footer1">
+        <p>
+            If you are looking for a web or backend developer or need help with a project,
+            feel free to contact me at
+            <span>anshul.iiitbhopal@gmail.com</span>
+        </p>
+        <h1>Let's<br>work<br>together</h1>
+    </div>
+
+    <div class="footer2">
+        <div class="socialItem">
+            <a href="https://www.instagram.com/anshul_14_05" class="fa fa-instagram"></a>
+            <a href="https://www.instagram.com/anshul_14_05" class="footerlink">@anshul_14_05</a>
+        </div>
+
+        <div class="socialItem">
+            <a href="mailto:anshul.iiitbhopal@gmail.com" class="fa fa-google"></a>
+            <a href="mailto:anshul.iiitbhopal@gmail.com" class="footerlink">Email</a>
+        </div>
+
+        <div class="socialItem">
+            <a href="https://www.linkedin.com/in/anshul-059076290" class="fa fa-linkedin"></a>
+            <a href="https://www.linkedin.com/in/anshul-059076290" class="footerlink">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
 <script src="./js/navbar.js"></script>
+</body>
 </html>
